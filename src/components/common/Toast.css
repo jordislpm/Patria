@@ -1,0 +1,52 @@
+.patria-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  color: var(--text-main);
+  font-size: 0.925rem;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+.toast-success {
+  border-left: 4px solid var(--accent-emerald);
+}
+
+.toast-error {
+  border-left: 4px solid var(--accent-crimson);
+}
+
+.toast-info {
+  border-left: 4px solid var(--accent-gold);
+}
+
+.text-emerald {
+  color: var(--accent-emerald);
+}
+
+.text-gold {
+  color: var(--accent-gold);
+}
+
+.toast-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.toast-close-btn:hover {
+  color: var(--text-main);
+}

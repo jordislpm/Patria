@@ -1,0 +1,237 @@
+/* Method Section Styling */
+
+.method-section {
+  background: var(--bg-surface);
+  position: relative;
+}
+
+.method-levels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.level-card {
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  height: 100%;
+}
+
+.level-scope-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gold);
+  background: rgba(255, 200, 0, 0.12);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.85rem;
+}
+
+.level-card-title {
+  font-size: 1.25rem;
+  font-weight: 850;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+}
+
+.level-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* 10 Questions Block */
+.method-questions-block {
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-gold);
+  background: var(--bg-card);
+  margin-bottom: 4rem;
+}
+
+.block-header-center {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.block-title {
+  font-size: 1.35rem;
+  font-weight: 850;
+  color: var(--text-main);
+}
+
+.block-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.eval-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+}
+
+.eval-q-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.eval-q-num {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--color-gold);
+  background: rgba(255, 200, 0, 0.15);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.eval-q-text {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.35;
+}
+
+/* 10 Steps Grid */
+.method-steps-block {
+  margin-bottom: 4rem;
+}
+
+.section-title-sm {
+  font-size: 1.75rem;
+  font-weight: 850;
+  color: var(--text-main);
+  margin-top: 0.5rem;
+}
+
+.ten-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.step-card {
+  padding: 1.35rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  transition: transform var(--transition-fast);
+}
+
+.step-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-gold);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: #111111;
+  font-weight: 850;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.step-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Fiscalization Box */
+.fiscalization-box {
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-gold);
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(255, 200, 0, 0.04) 100%);
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.fiscal-icon-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.fiscal-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.fiscal-intro {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.fiscal-questions-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1.75rem;
+  padding: 1.25rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-subtle);
+}
+
+.fiscal-questions-flow .dot {
+  color: var(--color-gold);
+}
+
+.fiscal-closing {
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+@media (max-width: 900px) {
+  .method-levels-grid,
+  .eval-questions-grid {
+    grid-template-columns: 1fr;
+  }
+}

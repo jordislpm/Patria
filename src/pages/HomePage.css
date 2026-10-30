@@ -1,0 +1,289 @@
+/* =========================================================================
+   HOME PAGE STYLING
+   ========================================================================= */
+
+.home-page-view {
+  position: relative;
+  overflow: hidden;
+}
+
+.platform-hub-section {
+  background: var(--bg-surface-elevated);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hub-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.platform-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.85rem;
+  margin-bottom: 2.75rem;
+}
+
+.platform-portal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.dark .platform-portal-card {
+  background: var(--bg-surface-elevated);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.platform-portal-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-gold);
+  box-shadow: 0 12px 30px rgba(255, 200, 0, 0.12);
+}
+
+.portal-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.portal-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 200, 0, 0.12);
+  border: 1px solid rgba(255, 200, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-icon {
+  color: var(--accent-gold);
+}
+
+.portal-badge {
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-muted);
+}
+
+.dark .portal-badge {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.portal-title {
+  font-size: 1.4rem;
+  font-weight: 850;
+  color: var(--text-main);
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+
+.portal-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.portal-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+  padding: 0.85rem 1rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.dark .portal-highlights {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.portal-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 650;
+  color: var(--text-main);
+}
+
+.portal-card-footer {
+  margin-top: auto;
+}
+
+.portal-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  background: var(--bg-surface-elevated);
+  border: 1.5px solid var(--border-gold);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-weight: 800;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.portal-cta-btn:hover {
+  background: var(--accent-gold);
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(255, 200, 0, 0.35);
+}
+
+.platform-secondary-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.secondary-hub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1.15rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-main);
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.secondary-hub-pill:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* Home CTA Banner */
+.home-cta-banner-section {
+  background: var(--bg-main);
+}
+
+.home-cta-banner {
+  background: linear-gradient(135deg, rgba(255, 200, 0, 0.15), rgba(30, 58, 138, 0.2));
+  border: 2px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.dark .home-cta-banner {
+  background: linear-gradient(135deg, rgba(255, 200, 0, 0.15), rgba(15, 23, 42, 0.6));
+}
+
+.cta-banner-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.cta-banner-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.cta-banner-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.cta-banner-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-banner-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.65rem;
+  font-weight: 850;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.btn-pro-outline {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-subtle);
+  color: var(--text-main);
+}
+
+.btn-pro-outline:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .platform-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .portal-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .home-cta-banner {
+    padding: 2.25rem 1.25rem;
+  }
+
+  .cta-banner-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-btn-link {
+    width: 100%;
+    justify-content: center;
+  }
+}

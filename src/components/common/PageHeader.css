@@ -1,0 +1,84 @@
+/* =========================================================================
+   PAGE HEADER COMPONENT STYLING
+   ========================================================================= */
+
+.patria-page-header {
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-surface-elevated) 0%, var(--bg-main) 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 6.5rem 0 2.5rem 0; /* extra top padding for fixed navbar */
+  overflow: hidden;
+}
+
+.page-header-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 650;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-link:hover {
+  color: var(--accent-gold);
+}
+
+.breadcrumb-sep {
+  color: var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.breadcrumb-current {
+  color: var(--text-main);
+  font-weight: 750;
+}
+
+.page-header-body {
+  max-width: 860px;
+}
+
+.page-header-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.75rem;
+  background: rgba(255, 200, 0, 0.15);
+  border: 1px solid var(--border-gold);
+  color: var(--accent-gold);
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+.page-header-title {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.page-header-subtitle {
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+  .patria-page-header {
+    padding: 5.5rem 0 2rem 0;
+  }
+}

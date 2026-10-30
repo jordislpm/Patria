@@ -1,0 +1,41 @@
+.language-switcher-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.language-switcher-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  box-shadow: 0 0 10px var(--accent-gold-glow);
+}
+
+.globe-icon {
+  color: var(--accent-gold);
+}
+
+.lang-code {
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .language-switcher-btn {
+    padding: 0.28rem 0.5rem;
+    font-size: 0.75rem;
+    gap: 0.25rem;
+  }
+  .globe-icon {
+    width: 14px;
+    height: 14px;
+  }
+}

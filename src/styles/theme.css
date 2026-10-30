@@ -1,0 +1,157 @@
+/* Global Design System - Theme Tokens (Light & Dark) */
+
+:root {
+  /* Common Brand Accents */
+  --accent-gold-light: #fef08a;
+  --accent-gold: #ffc800;
+  --accent-gold-hover: #e5b400;
+  --accent-gold-bright: #ffd700;
+  --accent-gold-glow: rgba(255, 200, 0, 0.45);
+  --color-gold: #ffc800;
+  --border-gold: #ffc800;
+
+  --accent-crimson: #ef4444;
+  --accent-emerald: #10b981;
+  --accent-cyan: #06b6d4;
+
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* DEFAULT: LIGHT THEME */
+  --bg-main: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.96);
+  --bg-hero: #ffffff;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-card: #ffffff;
+
+  --border-subtle: #e2e8f0;
+  --border-accent: rgba(255, 200, 0, 0.75);
+  --border-focus: #ffc800;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --text-inverse: #ffffff;
+  --text-brand: #d97706;
+
+  --hero-title-color: #0f172a;
+  --hero-title-accent: #d97706;
+  --hero-subtitle-color: #334155;
+
+  --nav-bg: rgba(255, 255, 255, 0.96);
+  --nav-border: #e2e8f0;
+  --footer-bg: #0f172a;
+  --footer-text: #94a3b8;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 6px 25px rgba(255, 200, 0, 0.35);
+
+  --badge-bg: rgba(255, 200, 0, 0.15);
+  --badge-text: #b45309;
+}
+
+/* Explicit Light Theme */
+[data-theme="light"],
+html.light,
+body.light,
+.patria-app.light {
+  --bg-main: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.96);
+  --bg-hero: #ffffff;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-card: #ffffff;
+
+  --border-subtle: #e2e8f0;
+  --border-accent: rgba(255, 200, 0, 0.75);
+  --border-focus: #ffc800;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --text-inverse: #ffffff;
+  --text-brand: #d97706;
+
+  --hero-title-color: #0f172a;
+  --hero-title-accent: #d97706;
+  --hero-subtitle-color: #334155;
+
+  --nav-bg: rgba(255, 255, 255, 0.96);
+  --nav-border: #e2e8f0;
+  --footer-bg: #0f172a;
+  --footer-text: #cbd5e1;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 6px 25px rgba(255, 200, 0, 0.35);
+
+  --badge-bg: rgba(255, 200, 0, 0.15);
+  --badge-text: #b45309;
+}
+
+/* DARK THEME */
+[data-theme="dark"],
+html.dark,
+body.dark,
+.patria-app.dark {
+  --bg-main: #18191b;
+  --bg-surface: #222428;
+  --bg-surface-elevated: #2b2e33;
+  --bg-glass: rgba(24, 25, 27, 0.96);
+  --bg-hero: #18191b;
+  --bg-input: #2b2e33;
+  --bg-modal: #222428;
+  --bg-card: #222428;
+
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-accent: rgba(255, 200, 0, 0.65);
+  --border-focus: #ffc800;
+
+  --text-main: #ffffff;
+  --text-muted: #cbd5e1;
+  --text-light: #94a3b8;
+  --text-inverse: #18191b;
+  --text-brand: #ffc800;
+
+  --hero-title-color: #ffc800;
+  --hero-title-accent: #ffffff;
+  --hero-subtitle-color: #f1f5f9;
+
+  --nav-bg: rgba(24, 25, 27, 0.96);
+  --nav-border: rgba(255, 255, 255, 0.12);
+  --footer-bg: #111214;
+  --footer-text: #94a3b8;
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 16px 50px rgba(0, 0, 0, 0.85);
+  --shadow-gold: 0 8px 35px rgba(255, 200, 0, 0.5);
+
+  --badge-bg: rgba(255, 200, 0, 0.2);
+  --badge-text: #ffc800;
+}
+
+/* Base Body Application */
+html, body, #root, .patria-app {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
